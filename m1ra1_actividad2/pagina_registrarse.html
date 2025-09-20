@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    <a href="index.html">Regresar</a>
+    <br>
+    <form style="margin: auto; width: 300px; border: 1px solid black; padding: 10px;">
+        Registrarse
+        <hr>
+        <br><label for="">Nombre(s)</label>
+        <br><input type="text" name="txt_nombre" placeholder="Ingrese su nombre">
+        <br><label for="">Apellido(s)</label>
+        <br><input type="text" name="txt_apellido" placeholder="Ingrese su(s) apellido(s)">
+        <br><label for="">Teléfono</label>
+        <br><input type="text" name="txt_telefono" placeholder="Ingrese su número telefonico">
+        <br><label for="">Fecha de Nacimiento</label>
+        <br><input type="date" name="txt_fecha_de_nacimiento">
+        <br>Genero
+        <br>
+        <label for="">Hombre</label>
+        <input type="radio" name="opt_genero" id="opt_genero_h">
+        <label for="">Mujer</label>
+        <input type="radio" name="opt_genero" id="opt_genero_m">
+        <br>Intereses
+        <br>
+        <label for="">Educación</label>
+        <input type="checkbox" name="chk_intereses" id="chk_intereses_educacion">
+        <label for="">Deportes</label>
+        <input type="checkbox" name="chk_intereses" id="chk_intereses_deportes">
+        <label for="">Arte</label>
+        <input type="checkbox" name="chk_intereses" id="chk_intereses_arte">
+        <label for="">Ocio</label>
+        <input type="checkbox" name="chk_intereses" id="chk_intereses_ocio">
+        <br>Nivel Académico
+        <br><select name="lst_nivel_academico" id="">
+            <option value="1">Primaria</option>
+            <option value="2">Básicos</option>
+            <option value="3">Diversificado</option>
+            <option value="4">Técnico</option>
+            <option value="5">Licenciatura</option>
+            <option value="6">Postgrados</option>
+            <option value="7">Maestrias</option>
+            <option value="8">Doctorado</option>
+        </select>
+        <br>Correo electrónico
+        <br><input type="email" name="txt_correo_electronico">
+        <br><input type="submit" name="btn_registrarse" value="Registrarse">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.container{
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+header{
+    height: 400px;
+    background-color: orange;
+}
+#footer1{
+    height: 50px;
+    background-color: darkseagreen;
+}
+main{
+    height: 250px;
+    display: flex;
+}
+#main_verde, #main_amarillo, #main_celeste{
+    flex-grow: 1;
+}
+#main_verde{
+    background-color: palegreen;
+}
+#main_amarillo{
+    background-color: khaki;
+}
+#main_celeste{
+    background-color: lightskyblue;
+}
+article{
+    height: 800px;
+    background-color: antiquewhite;
+}
+nav{
+    height: 240px;
+    display: flex;
+}
+.nav_azul, .nav_naranja{
+    flex-grow: 1;
+}
+#footer2{
+    height: 50px;
+    background-color: cornflowerblue;
+}

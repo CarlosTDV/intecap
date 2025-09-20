@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/icono.png">
+</head>
+<body>
+    <header>
+        <aside><img src="img/logo.png" alt=""></aside>
+        <h1>Bordes</h1>
+    </header>
+    <nav>
+        <ul class="ul_menu">
+            <li class="li_menu"><a href="index.html">Inicio</a></li>
+            <li class="li_menu"><a href="estructura.html">Estructura</a></li>
+            <li class="li_menu"><a href="colores.html">Colores</a></li>
+            <li class="li_menu"><a href="bordes.html">Bordes</a></li>
+            <li class="li_menu"><a href="sombreada.html">Sombreada</a></li>
+            <li class="li_menu"><a href="fondos.html">Fondos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <p>
+            En CSS, los bordes son parte del modelo de caja y se utilizan para 
+            definir la apariencia visual del borde exterior de un elemento. Los 
+            bordes pueden tener diferentes estilos, anchos y colores, y se aplican 
+            alrededor del contenido y el relleno de un elemento. La propiedad 
+            principal para controlar los bordes es <b>'border'</b>.
+            <br>La propiedad <b>'border'</b> en CSS se puede dividir en tres partes:
+        </p>
+        <ol>
+            <li>
+                <h4>Ancho del Borde ('border-width'):</h4>
+                <p>
+                    Define el ancho del borde. Puede especificarse en píxeles, 
+                    em, rem o porcentajes. Ejemplo: <b>'border-width: 2px'</b>
+                </p>
+            </li>
+            <li>
+                <h4>Estilo del Borde ('border-style'):</h4>
+                <p>
+                    Define el estilo del borde, como sólido, punteado, discontinuo, 
+                    doble, etc. Ejemplo: <b>'border-style: dashed;'</b>
+                </p>
+            </li>
+            <li>
+                <h4>Color del Borde ('border-color')</h4>
+                <p>
+                    Define el color del borde. Puede ser un nombre de color, un valor 
+                    hexadecimal, un valor RGB, etc. Ejemplo: <b>'border-color: #333;'</b>
+                </p>
+            </li>
+        </ol>
+        <p>
+            Estas tres propiedades pueden combinarse en la propiedad <b>'border'</b> 
+            de una manera más compacta, espeficicando el ancho, el estilo y el color en ese 
+            orden. Por ejemplo:
+        </p>
+        <code>
+            <pre>
+                border: 2px dashed #be0000;
+            </pre>
+        </code>
+        <p id="bordeejemplo1">Texto dentro de un borde</p>
+        <p>
+            Además de la propiedad <b>'border'</b>, hay variantes que te permiten establecer 
+            cada lado del borde de forma independiente:
+        </p>
+        <ul type="disc">
+            <li>
+                <h4>Borde Superior ('border-top'):</h4>
+                <p>Permite establecer las propiedades del borde en la parte superior del elemento.</p>
+            </li>
+            <li>
+                <h4>Borde Derecho ('border-right'):</h4>
+                <p>Permite establecer las propiedades del borde en el lado derecho del elemento.</p>
+            </li>
+            <li>
+                <h4>Borde Inferior ('border-bottom')</h4>
+                <p>Permite establecer las propiedades del borde en la parte inferior del elemento</p>
+            </li>
+            <li>
+                <h4>Borde Izquierdo ('border-left'):</h4>
+                <p>Permite establecer las propiedades del borde en el lado izquierdo del elemento.</p>
+            </li>
+        </ul>
+        <p>Ejemplo:</p>
+        <code>
+            <pre>
+                border-top: 1px solid #ccc;
+                border-right: 2px dotted #666;
+                border-bottom: 3px double #999;
+                border-left: 4px dashed #aaa;
+            </pre>
+        </code>
+        <p id="bordeejemplo2">Texto dentro de un borde</p>
+    </section>
+    <section>
+        <h2>Bordes redondeados</h2>
+        <p>Los bordes tambien tienen una propiedad que permite suavizar las equinas de un elemento, 
+            dando un aspecto más estilizado y moderno. Esta característica se logra mediante la 
+            propiedad <b>'border-radius'</b>. Esta propiedad define el radio de las esquinas de 
+            un elemento, lo que determina cuánto se redondean.
+        </p>
+        <p>
+            La propiedad <b>'border-raidus</b> puede tomar uno o más valores. Aquí tienes algunos 
+            ejemplos:
+        </p>
+        <ol>
+            <li>
+                <h4>Un solo valor:</h4>
+                <p>Aplica el mismo radio de borde a todas las esquinas.</p>
+                <code>
+                    <pre>
+                        #bordeuno{
+                            border-radius: 10px;
+                        }
+                    </pre>
+                </code>
+                <p id="bordeuno"></p>
+            </li>
+            <li>
+                <h4>Dos valores:</h4>
+                <p>
+                    El primer valor se aplica a las esquinas superiores izquierda y derecha, y el 
+                    segundo valor a las esquinas inferiores izquierda y derecha.
+                </p>
+                <code>
+                    <pre>
+                        #bordedos{
+                            border-radius: 10px 20px;
+                        }
+                    </pre>
+                </code>
+                <p id="bordedos"></p>
+            </li>
+            <li>
+                <h4>Tres valores:</h4>
+                <p>
+                    El primer valor se aplica a la esquina superior izquierda, el segundo 
+                    valor se aplica a las esquinas superior derecha e inferior izquierda, y el 
+                    tercer valor se aplica a la esquina inferior derecha.
+                </p>
+                <code>
+                    <pre>
+                        #bordetres{
+                            border-radius: 10px 20px 30px;
+                        }
+                    </pre>
+                </code>
+                <p id="bordetres"></p>
+            </li>
+            <li>
+                <h4>Cuatro valores:</h4>
+                <p>
+                    Cada valor se aplica a una esquina específica en el orden superior izquierda, 
+                    superior derecha, inferior derecha e inferior izquierda.
+                </p>
+                <code>
+                    <pre>
+                        #bordecuatro{
+                            border-radius: 10px 20px 30px 40px;
+                        }
+                    </pre>
+                </code>
+                <p id="bordecuatro"></p>
+            </li>
+        </ol>
+        <p>
+            La propiedaed <b>'border-radius'</b> es versátil y permite experimentar con 
+            diferentes valores para lograr el efecto deseado. Los borde redondeados son 
+            especialmente útiles para crear interfaces más amigables y atractivas visualemente.
+        </p>
+    </section>
+    <footer>
+        Creado por: 2018-027303 | Carlos Enrique Tavico Marroquin
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombreada</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/icono.png">
+</head>
+<body>
+    <header>
+        <aside><img src="img/logo.png" alt=""></aside>
+        <h1>Sombras</h1>
+    </header>
+    <nav>
+        <ul class="ul_menu">
+            <li class="li_menu"><a href="index.html">Inicio</a></li>
+            <li class="li_menu"><a href="estructura.html">Estructura</a></li>
+            <li class="li_menu"><a href="colores.html">Colores</a></li>
+            <li class="li_menu"><a href="bordes.html">Bordes</a></li>
+            <li class="li_menu"><a href="sombreada.html">Sombreada</a></li>
+            <li class="li_menu"><a href="fondos.html">Fondos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <p>
+            Las propiedades <b>'text-shadow'</b> y <b>'box shadow'</b> son propiedades en CSS 
+            utilizadas para agregar sombras a elementos en una página web.
+        </p>
+    </section>
+    <section>
+        <h2>text-shadow</h2>
+        <p>
+            La propiedad <b>'text-shadow'</b> se utiliza para agregar sombras a texto. 
+            Se puede aplicar sombras a letras o palabras para mejorar la legibilidad o para 
+            agregar un efecto estilizado. La sintaxis básica es:
+        </p>
+        <code>
+            <pre>
+                selector {
+                    text-shadow: offset-x offset-y blur-radius color;
+                }
+            </pre>
+        </code>
+        <ul type="disc">
+            <li>
+                <p>
+                   <b>'offset-x': </b>Especifica la posicón horzontal de la sombra en relación 
+                   con el texto. Puede ser un valor positivo (derecha) o negativo (izquierda.)
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>'offset-y:' </b>Especifica la posición vertical de la sombra en relación 
+                    con el texto. Puede ser un valor positivo (abajo) o negativo (arriba).
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>'blur-radius:' </b>Define la cantidad de desenfoque que se aplica a la sombra. 
+                    Puede ser un valor positivo.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>'color': </b>Define el color de la sombra:
+                </p>
+            </li>
+        </ul>
+        <p>Ejemplo:</p>
+        <code>
+            <pre>
+                h2 {
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                }
+            </pre>
+        </code>
+        <h2 id="ejemplosombra1">Ejemplo de sombra con 'text-shadow'</h2>
+        <p>
+            Este ejemplo crea una sombra para el texto <b>'&lt;h2&gt;'</b> con un desplazamiento de 2 píxeles 
+            a la derecha y 2 píxeles hacia abajo, un desenfoque de 4 píxeles y un color semi-transparente 
+            negro.
+        </p>
+    </section>
+    <section>
+        <h2>box-shadow</h2>
+        <p>
+            La propiedad <b>'box-shadow'</b> se utiliza para agregar sombras a cajas (elementos como divs, 
+            imágnes, etx.). Se puede usar para resaltar o dar profunidad a los elementos. La sintaxis 
+            básica es:
+        </p>
+        <code>
+            <pre>
+                selector {
+                    box-shadow: offset-x offset-y blur-radius spread-radius color;
+                }
+            </pre>
+        </code>
+        <ul type="disc">
+            <li><b>'offset-x': </b>Especifica la posición horizontal de la sombra en relación con la caja.</li>
+            <li><b>'offset-y': </b>Especifica la posición vertical de la sombra en relación con la caja.</li>
+            <li><b>'blur-radius': </b>Define la cantidad de desenfoque que se aplica a la sombra.</li>
+            <li><b>'spread-radius': </b>Aumenta o reduce el tamaño de la sombra.</li>
+            <li><b>'color': </b>Define el color de la sombra.</li>
+        </ul>
+        <p>Ejemplo:</p>
+        <code>
+            <pre>
+                div {
+                    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+                }
+            </pre>
+        </code>
+        <div id="ejemplosombra2">Ejemplo de sombra con <b>'box-shadow'</b></div>
+        <p>
+            Este ejemplo agrega una sombra a un <b>'&lt;div&gt;'</b> con un desplazamiento de 4 píxeles a la 
+            derecha, 4 píxeles hacia abajo, un desenfoque de 8 píxeles y un color semi-transparente negro.
+        </p>
+    </section>
+    <footer>
+        Creado por: 2018-027303 | Carlos Enrique Tavico Marroquin
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.contenedor{
+    width: 900px;
+    margin: auto;
+}
+header{
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+#aside_azul{
+    background-color: cornflowerblue;
+}
+#aside_rojo{
+    background-color: red;
+}
+#aside_gris{
+    background-color: gray;
+}
+#section1{
+    height: 300px;
+    display: grid;
+    grid-template-columns: 600px auto;
+}
+#sect1art1{
+    background-color: black;
+}
+#sect1art2{
+    background-color: gold;
+}
+#section2{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+#sect2art1{
+    background-color: red;
+}
+#sect2art2{
+    background-color: cornflowerblue;
+}
+#section3{
+    height: 200px;
+    background-color: darkseagreen;
+}
+#section4{
+    height: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#sect4art1{
+    background-color: gold;
+}
+#sect4art2{
+    background-color: black;
+}
+footer{
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}

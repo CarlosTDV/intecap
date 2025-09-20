@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/icono.png">
+</head>
+<body>
+    <header>
+        <aside><img src="img/logo.png" alt=""></aside>
+        <h1>Introducción a CSS</h1>
+    </header>
+    <nav>
+        <ul class="ul_menu">
+            <li class="li_menu"><a href="index.html">Inicio</a></li>
+            <li class="li_menu"><a href="estructura.html">Estructura</a></li>
+            <li class="li_menu"><a href="colores.html">Colores</a></li>
+            <li class="li_menu"><a href="bordes.html">Bordes</a></li>
+            <li class="li_menu"><a href="sombreada.html">Sombreada</a></li>
+            <li class="li_menu"><a href="fondos.html">Fondos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>¿Que es CSS?</h2>
+        <p>CSS (Cascading Style Sheets) significa "Hojas de Estilo en Cascada",
+            es un lenguaje de diseño utilizado para describir la presentación de
+            un documento HTML o XML. CSS se centra en la parte visual de una pagina,
+            como el estilo de fuente, colores, margenes, etc.
+            CSS puede utilizarse en un documento separado de HTML, lo que permite 
+            usar en varios documentos los recursos de un solo CSS.
+        </p>
+        <h2>Formas de aplicar CSS</h2>
+    </section>
+    <section>
+        <h3>1. En línea</h3>
+        <p>Para agregar CSS en línea, se debe escribir dentro de la etiqueta correspondiente.
+            <br>En el siguiente ejemplo se agregó CSS en la etiqueta <b>p</b>.
+        </p>
+        <code>
+            <pre>
+                &lt;p style="color: red; font-size: 20px;"&gt;Así se aplica CSS en línea&lt;/p&gt;
+            </pre>
+        </code>
+        <p style="color: red; font-size: 20px;">Así se aplica CSS en línea</p>
+    </section>
+    <section>
+        <h3>2. Interna</h3>
+        <p>Para agregar CSS de forma interna, se debe escribir dentro de la etiqueta <b>head</b> la palabra <b>style</b>.
+            <br>Luego, colocar la etiqueta a la que se le aplicaran estilos y entre llaves escribir los parametros correspondientes. A continucación se muestra un ejemplo.
+        </p>
+        <code>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="es"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Interna&lt;/title&gt;
+                    &lt;style&gt;
+                        p{
+                            color: red;
+                            font-size: 10px;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;p&gt;Así se aplica CSS de forma interna&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+        </code>
+        <p style="color: red; font-size: 20px;">Así se aplica CSS de forma interna</p>
+    </section>
+    <section>
+        <h3>3. Externa</h3>
+        <p>Para agregar CSS de forma externa, se debe crear un archivo con extensión <b>.css</b>.
+            <br>Luego, escribir la etiqueta a la que se le aplicara los estilos, y escribir los parametros correspondientes.
+        </p>
+        <code>
+            <pre>
+                .p_externo{
+                    color: red;
+                    font-size: 20px;
+                }
+            </pre>
+        </code>
+        <p>Ahora dentro del documento <b>html</b>, con la etiqueta <b>link</b> hacer referencia al archivo <b>css</b>.</p>
+        <code>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="es"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Externa&lt;/title&gt;
+                    &lt;link rel="stylesheet" href="css/estilos.css"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;p class="p_externo"&gt;Así se aplica CSS de forma externa&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+        </code>
+        <p class="p_externo">Así se aplica CSS de forma externa</p>
+    </section>
+    <section>
+        <h2>Comentarios</h2>
+        <p>Los comentarios ayudan al desarrollador y a cualquier persona que quiera leer el código a identificar
+            que es lo que hace una cada sección del código, de esta forma es mas sencillo ubicar una parte especifica
+            y poder modificarla.
+            <br>Para escribir un comentario, se debe colocar entre estos simbolos: /* */.
+            Los comentarios son únicamente para lectura, asi que no afecta el funcionamiento de la página.
+        </p>
+        <code>
+            <pre>
+                <p style="color: white;">               /*Este es un comentario*/</p>
+                .p_externo{
+                    color: red;
+                    font-size: 20px;
+                }
+            </pre>
+        </code>
+    </section>
+    <footer>
+        Creado por: 2018-027303 | Carlos Enrique Tavico Marroquin
+    </footer>
+</body>
+</html>

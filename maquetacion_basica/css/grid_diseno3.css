@@ -1,0 +1,49 @@
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 20% 25% 25% 20% 10%;
+    grid-template-areas:
+        'enc enc enc enc'
+        'cont cont cont menu'
+        'cont cont cont sesion'
+        'art1 art2 art3 art4'
+        'pie pie pie pie';
+}
+header{
+    grid-area: enc;
+    background-color: black;
+}
+main{
+    grid-area: cont;
+    background-color: gray;
+}
+nav{
+    grid-area: menu;
+    background-color: orange;
+}
+aside{
+    grid-area: sesion;
+    background-color: aqua;
+}
+#art1{
+    grid-area: art1;
+    background-color: greenyellow;
+}
+#art2{
+    grid-area: art2;
+    background-color: yellow;
+}
+#art3{
+    grid-area: art3;
+    background-color: gainsboro;
+}
+#art4{
+    grid-area: art4;
+    background-color: bisque;
+}
+footer{
+    grid-area: pie;
+    background-color: black;
+}

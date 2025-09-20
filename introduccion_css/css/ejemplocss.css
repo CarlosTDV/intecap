@@ -1,0 +1,33 @@
+/*section es un selector de etiqueta*/
+section{
+    background-color: crimson;
+    height: 300px;;
+}
+nav{
+    /*color = color de fuente*/
+    color: white;
+}
+.ul_menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.li_menu{
+    float: left;
+    width: 25%;
+}
+.li_menu a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.li_menu a:hover{
+    background-color: white;
+    color: black;
+}

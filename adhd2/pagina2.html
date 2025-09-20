@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        div{font-family: Arial, Helvetica, sans-serif;}
+    </style>
+</head>
+<body>
+    <div style="margin: auto; width: 900px; border: 1px solid black; padding: 10px;">
+        HTML básico
+        <br>INTECAP - CENTRO TICS
+        <h1 style="text-align: center;">TABLAS</h1>
+        <hr>
+        <table border="1" style="margin: auto; text-align: center; width: 800px;">
+            <tr>
+                <td><a href="index.html">Principal</a></td>
+                <td style="background-color: rgb(233, 233, 233);">Página 2</td>
+                <td><a href="pagina3.html">Página 3</a></td>
+                <td><a href="pagina4.html">Página 4</a></td>
+            </tr>
+        </table>
+        <br><h3>TABLA DE DATOS</h3>
+        <table border="1" style="margin: auto; text-align: center; width: 800px;">
+            <thead style="background-color: yellow;">
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo Electrónico</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Catalina</td>
+                    <td>Mendoza</td>
+                    <td>caty12@gmail.com</td>
+                    <td>24658768</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sebastán</td>
+                    <td>Herrera</td>
+                    <td>sebas43@gmail.com</td>
+                    <td>51465683</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mariana</td>
+                    <td>Rodríguez</td>
+                    <td>mari24@gmail.com</td>
+                    <td>46896781</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Benjamín</td>
+                    <td>Gonzáles</td>
+                    <td>benjamingonzales03@gmail.com</td>
+                    <td>52457863</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><h3>TABLA 2</h3>
+        <table border="1" style="margin: auto; text-align: center; width: 800px;">
+            <tr>
+                <td colspan="10">Combinar Celdas en Tablas</td>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td colspan="5" rowspan="2">4</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </table>
+        <hr>
+        <div style="text-align: right;">Creado por: Carlos Tavico</div>
+    </div>
+</body>
+</html>

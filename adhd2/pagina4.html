@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        div{font-family: Arial, Helvetica, sans-serif;}
+    </style>
+</head>
+<body>
+    <div style="margin: auto; width: 900px; border: 1px solid black; padding: 10px;">
+        HTML básico
+        <br>INTECAP - CENTRO TICS
+        <h1 style="text-align: center;">FORMULARIOS</h1>
+        <hr>
+        <table border="1" style="margin: auto; text-align: center; width: 800px;">
+            <tr>
+                <td><a href="index.html">Principal</a></td>
+                <td><a href="pagina2.html">Página 2</a></td>
+                <td><a href="pagina3.html">Página 3</a></td>
+                <td style="background-color: rgb(233, 233, 233);">Página 4</td>
+            </tr>
+        </table>
+        <h1 style="text-align: center;">FORMULARIOS DE REGISTRO</h1>
+        <form action="" style="margin: auto; width: 300px; padding: 10px; text-align: center;">
+            <label for="txt_nombre">Nombre:</label>
+            <input type="text" name="txt_nombre">
+            <br>
+            <br><label for="txt_apellidos">Apellidos:</label>
+            <input type="text" name="txt_apellidos">
+            <br>
+            <br>Sexo:
+            <label for="">Hombre</label>
+            <input type="radio" value="H" name="opt_sexo">
+            <label for="">Mujer</label>
+            <input type="radio" value="M" name="opt_sexo">
+            <br>
+            <br><label for="">Correo:</label>
+            <input type="email" name="txt_correo">
+            <br>
+            <br><label for="">Departamento:</label>
+            <select name="lst_departamento" id="">
+                <option value="1">Alta Verapaz</option>
+                <option value="2">Baja Verapaz</option>
+                <option value="3">Chimaltenango</option>
+                <option value="4">Chiquimula</option>
+                <option value="5">El Progreso</option>
+                <option value="6">Escuintla</option>
+                <option value="7">Guatemala</option>
+                <option value="8">Huehuetenango</option>
+                <option value="9">Izabal</option>
+                <option value="10">Jalapa</option>
+                <option value="11">Jutiapa</option>
+                <option value="12">Petén</option>
+                <option value="13">Quetzaltenango</option>
+                <option value="14">Quiché</option>
+                <option value="15">Retalhuleu</option>
+                <option value="16">Sacatepéquez</option>
+                <option value="17">San Marcos</option>
+                <option value="18">Santa Rosa</option>
+                <option value="19">Sololá</option>
+                <option value="20">Suchitepéquez</option>
+                <option value="21">Totonicapán</option>
+                <option value="22">Zacapa</option>
+            </select>
+            <br>
+            <br><input type="checkbox" name="chk_recibir" id="chk_recibir_ofertas">
+            <label for="">Deseo Recibir Ofertas</label>
+            <br>
+            <br><input type="checkbox" name="chk_recibir" id="chk_recibir_noticias">
+            <label for="">Deseo Recibir Noticias</label>
+            <br>
+            <br><a href="index.html">
+                <input type="button" name="btn_enviar" value="Enviar">
+            </a>
+        </form>
+        <hr>
+        <div style="text-align: right;">Creado por: Carlos Tavico</div>
+    </div>
+</body>
+</html>

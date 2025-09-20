@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondos y opacidad</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/icono.png">
+</head>
+<body>
+    <header>
+        <aside><img src="img/logo.png" alt=""></aside>
+        <h1>Fondos y opacidad</h1>
+    </header>
+    <nav>
+        <ul class="ul_menu">
+            <li class="li_menu"><a href="index.html">Inicio</a></li>
+            <li class="li_menu"><a href="estructura.html">Estructura</a></li>
+            <li class="li_menu"><a href="colores.html">Colores</a></li>
+            <li class="li_menu"><a href="bordes.html">Bordes</a></li>
+            <li class="li_menu"><a href="sombreada.html">Sombreada</a></li>
+            <li class="li_menu"><a href="fondos.html">Fondos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Fondos CSS</h2>
+        <p>Las propiedades de fondo de CSS se utilizan para agregar efectos de fondo a los elementos.        </p>
+    </section>
+    <section id="ejemplofondo1">
+        <h2>'background-color':</h2>
+        <p>
+            La propiedad <b>'background-color'</b> se utiliza para establecer el color de fondo de 
+            un elemento. Puede ser especificado usando nombres de color, valores hexadecimales, valores 
+            RGB, entre otros. Ejemplo:
+        </p>
+        <code>
+            <pre>
+                section {
+                    background-color: #f0f0f0;
+                }
+            </pre>
+        </code>
+    </section>
+    <section id="ejemplofondo2">
+        <h2>'background-image':</h2>
+        <p>
+            La propiedad <b>'background-image'</b> se utiliza para establecer una imagen de fondo 
+            para un elemento. Puede especificar la ruta de la imagen o utilizar <b>'url()'</b> para 
+            incluir la imagen. Ejemplo:
+        </p>
+        <code>
+            <pre>
+                section {
+                    background-image: url('img/fondo.jpg');
+                }
+            </pre>
+        </code>
+    </section>
+    <section id="ejemplofondo3">
+        <h2>'backround-repeat':</h2>
+        <p>
+            La propiedad <b>'backround-repeat'</b> se utiliza para especificar si la imagen de 
+            fondo debe repetirse en el eje horizontal, vertical o en ambos. Puede tener valores como 
+            <b>'repeat'</b>, <b>'repeat-x'</b>, <b>'repeat-y'</b>, o <b>'no-repeat'</b>. Ejemplo:
+        </p>
+        <code>
+            <pre>
+                section {
+                    background-repeat: repeat-x;
+                }
+            </pre>
+        </code>
+    </section>
+    <section id="ejemplofondo4">
+        <h2>'background-attachment':</h2>
+        <p>
+            La propiedad <b>'background-attachment'</b> se utiliza para especificar si la imagen 
+            de fondo debe estar fija o desplazarse con el contenido cuando el usuario 
+            desplace la página. Puede tener valores como <b>'scroll'</b> o <b>'fixed'</b>. 
+            Ejemplo:
+        </p>
+        <code>
+            <pre>
+                section {
+                    background-attachment: fixed;
+                }
+            </pre>
+        </code>
+    </section>
+    <section id="ejemplofondo5">
+        <h2>'background-position':</h2>
+        <p>
+            La propiedad <b>'background-position'</b> se utiliza para definir la posición inicial de 
+            la iagen de fondo. Puede especificar valores como píxeles, porcentajes o 
+            palabras clave como <b>'left'</b>, <b>'center'</b>, <b>'top'</b>, <b>'bottom'</b>, etc. 
+            Ejemplo:
+        </p>
+        <code>
+            <pre>
+                section {
+                    background-position: center top;
+                }
+            </pre>
+        </code>
+    </section>
+    <section>
+        <h2>Propiedad 'opacity'</h2>
+        <p>
+            La propiedad 'opacity' en CSS se utiliza para controlar la opacidad de un elemento, es 
+            decir, cuantó se ve a través de él. Puede tomar valores en el rango de 0 a 1, donde 0 
+            representa la completa (sin transparencia). La sintaxis básica es la siguiente:
+        </p>
+        <code>
+            <pre>
+                selector {
+                    opacity: valor;
+                }
+            </pre>
+        </code>
+        <p>
+            <b>'valor'</b> puede contener un número en el rango de 0 a 1. Por ejemplo, <b>'0.5'</b>
+            representa una opacidad del 50%.
+        </p>
+        <section>
+            <div id="ejemplofondo6">100%</div>
+            <div id="ejemplofondo7">50%</div>
+            <div id="ejemplofondo8">25%</div>
+        </section>
+    </section>
+    <footer>
+        Creado por: 2018-027303 | Carlos Enrique Tavico Marroquin
+    </footer>
+</body>
+</html>

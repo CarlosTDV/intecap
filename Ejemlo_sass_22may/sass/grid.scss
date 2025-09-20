@@ -1,0 +1,18 @@
+//cantidad de columnas
+//generar 1 hasta 12 columnas
+$columnas:12;
+
+.grid{
+    display: grid;
+}
+div{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+}
+@for $i from 1 to $columnas+1{
+    .grid-#{$i}{
+        grid-template-columns: repeat($i, percentage(calc(1/$i)));
+    }
+}

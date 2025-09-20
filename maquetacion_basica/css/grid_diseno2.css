@@ -1,0 +1,31 @@
+.contenedor{
+    width: 1000px;
+    display: grid;
+    grid-template-rows: 350px 125px 500px 50px;
+    grid-template-areas:
+    'enc enc enc enc'
+    'art1 art2 art3 art4'
+    'sect art art aside'
+    'footer footer footer footer';
+    margin: auto;
+    text-align: center;
+}
+header{
+    grid-area: enc; background-color: yellow;
+}
+#art1{grid-area: art1; background-color: orange;}
+#art2{grid-area: art2; background-color: gray;}
+#art3{grid-area: art3; background-color: orange;}
+#art4{grid-area: art4; background-color: gray;}
+section{
+    grid-area: sect; background-color: darkseagreen;
+}
+article{
+    grid-area: art; background-color: azure;
+}
+aside{
+    grid-area: aside; background-color: darkseagreen;
+}
+footer{
+    grid-area: footer; color: white; background-color: black;
+}

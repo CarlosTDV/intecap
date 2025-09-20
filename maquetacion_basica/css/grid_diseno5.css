@@ -1,0 +1,46 @@
+.contenedor{
+    width: 1440px;
+    margin: auto;
+}
+header{
+    height: 400px;
+    background-color: orange;
+}
+nav{
+    height: 50px;
+    background-color: aquamarine;
+}
+#empresa{
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#mision, #vision, #valores{
+    height: 250px;
+}
+#mision{
+    background-color: green;
+}
+#vision{
+    background-color: yellow;
+}
+#valores{
+    background-color: bisque;
+}
+main{
+    height: 800px;
+}
+#imagenes{
+    height: 240px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+/*etiquetas img que estan dentro de #imagenes*/
+#imagenes img{
+    border: 1px solid black;
+    height: 240px;
+}
+footer{
+    height: 25px;
+    background-color: aquamarine;
+}

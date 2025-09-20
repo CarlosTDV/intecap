@@ -1,0 +1,27 @@
+.container{
+    width: 500px;
+    margin: auto;
+}
+#logo{
+    width: 250px
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav{
+    margin: auto;
+    display: flex;
+    /*alinear horizontalemnte los elementos dentro del contenedor*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+nav section{
+    width: 196px;
+    border: 1px solid black;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+}

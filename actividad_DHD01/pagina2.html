@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixins</title>
+    <link rel="stylesheet" href="sass/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="active"><a href="pagina2.html">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+                <li><a href="pagina4.html">Página 4</a></li>
+                <li><a href="pagina5.html">Página 5</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Mixins</h1>
+            <article>
+            <p>
+                En Sass, los mixins son bloques de código CSS reutilizables que te permiten escribir código más organizado, mantenible y consistente. Se pueden utilizar para agrupar propiedades CSS comunes, definir estilos de base para componentes y crear funciones CSS personalizadas.
+                ¿Cómo funcionan los mixins en Sass?
+                Los mixins en Sass se definen utilizando la directiva @mixin. El nombre del mixin va seguido de llaves que contienen las propiedades CSS que se definen en el mixin. Los mixins se pueden incluir en otros selectores de CSS utilizando la directiva @include.
+                Ejemplo de un mixin en Sass:
+            </p>
+            <code>
+                <pre>
+                    @mixin button-primary {
+                        background-color: #007bff;
+                        color: #fff;
+                        border: none;
+                        padding: 10px 20px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 4px 2px;
+                        cursor: pointer;
+                      }
+                      
+                      .button {
+                        @include button-primary;
+                      }                    
+                </pre>
+            </code>
+            <button class="button">button</button>
+            <p>En este ejemplo, se define un mixin llamado button-primary que define las propiedades CSS para un botón primario. El mixin se incluye luego en el selector .button para aplicar los estilos de botón primario al elementos.</p>
+            <h3>@extends</h3>
+            <p>La directiva @extend en Sass se utiliza para heredar las propiedades CSS de un selector a otro. Esto significa que puedes definir un conjunto de propiedades CSS en un selector y luego aplicar esas mismas propiedades a otros selectores utilizando la directiva @extend.
+                Coloquemos las propiedades del mixin anterior dentro del selector .button:
+            </p>
+            <code>
+                <pre>
+                    .button {
+                        background-color: #007bff;
+                        color: #fff;
+                        border: none;
+                        padding: 10px 20px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 4px 2px;
+                        cursor: pointer;
+                    }                     
+                </pre>
+            </code>
+            <p>Ahora heredaremos esas propiedades al selector .button-small con algunos cambios:</p>
+            <code>
+                <pre>
+                    .button-small {
+                        @extend .button;
+                        padding: 5px 10px;
+                        font-size: 12px;
+                    }  
+                </pre>
+            </code>
+            <button class="button">button</button>
+            <button class="button-small">small-button</button>
+            <p>Esto es especialmente útil cuando varios elementos son casi identicos y solo se necesita
+                cambiar algunas propiedades.
+            </p>
+        </article>
+        </section>
+    </div>
+</body>
+</html>

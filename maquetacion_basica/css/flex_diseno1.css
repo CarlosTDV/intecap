@@ -1,0 +1,31 @@
+.contenedor{
+   width: 1440px;
+   margin: auto;
+}
+header{
+    height: 350px;
+    background-color: skyblue;
+}
+.contenido{
+    display: flex;
+    height: 900px;
+}
+.tam_contenido{
+    height: 900px;
+}
+nav{
+    background-color: brown;
+    width: 25%;
+}
+main{
+    background-color: green;
+    width: 50%;
+}
+aside{
+    background-color: black;
+    width: 25%;
+}
+footer{
+    background-color: skyblue;
+    height: 50px;
+}

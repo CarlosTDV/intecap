@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/icono.png">
+</head>
+<body>
+    <header>
+        <aside><img src="img/logo.png" alt=""></aside>
+        <h1>Estructura de CSS</h1>
+    </header>
+    <nav>
+        <ul class="ul_menu">
+            <li class="li_menu"><a href="index.html">Inicio</a></li>
+            <li class="li_menu"><a href="estructura.html">Estructura</a></li>
+            <li class="li_menu"><a href="colores.html">Colores</a></li>
+            <li class="li_menu"><a href="bordes.html">Bordes</a></li>
+            <li class="li_menu"><a href="sombreada.html">Sombreada</a></li>
+            <li class="li_menu"><a href="fondos.html">Fondos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Estructura de CSS</h2>
+        <p>En CSS, la estructura básica consta de tres partes principales: selector, propiedad y valor.</p>
+        <code style="font-size: 35px;">
+            <pre>
+                <span style="color: yellow;">selector</span>{<span style="color: aqua;">propiedad:</span><span style="color: magenta;">valor;</span>}
+            </pre>
+        </code>
+        <h3>a. Selector</h3>
+        <p>El selector es la parte que llama a los elementos HTML a los que se 
+            le aplicarán los estilos. Puede ser directamente el nombre de un elemento 
+            HTML, una clase o un ID. Si se coloca el nombre del elemento HTML, los 
+            parametros dentro de este se aplicarán a todos los elementos dentro del 
+            documento HTML, una clase solo afecta a los elementos con que hagan referencia 
+            a esta, mientras que un ID afecta unicamente a al elemento que posea dicha ID.
+        </p>
+        <h3>b. Propiedad</h3>
+        <p>
+            La propiedad define qué caractéristica o aspecto del elemento se va a 
+            utilizar. Puede ser cualquier elemento visual, como la fuente del texto, 
+            color o tamaño.
+        </p>
+        <h3>c. Valor</h3>
+        <p>
+            El valor es la configuración específica que se asigna a la <b>propiedad</b>. 
+            Representa el estilo o apariencia que se le aplicará a elemento seleccionado.
+        </p>
+    </section>
+    <section>
+        <h2>Modelo de cajas en CSS</h2>
+        <p>
+            El modelo de cajas en CSS se refiere a cómo se representa y organiza el contenido 
+            de un elemento HTML en términos de cajas rectangulares. Cada elemento 
+            HTML se considera una caja, y el modelo de cajas describe cómo se calculan 
+            y aplican propiedades como el ancho, alto, márgenes, bordes y rellenos de esa caja. 
+            El modelo de caja consta de las siguientes partes principales:
+        </p>
+        <ol>
+            <li>
+                <b>Contenido (Content):</b>
+                <br>Es el área donde se muestra el contenido real del elemento, como texto, imágenes, 
+                u otros elementos HTML.
+            </li>
+            <li>
+                <b>Relleno (Padding):</b>
+                <br>Es el espacio entre el contenido y el borde de la caja. El relleno proporciona 
+                a un espacio adicional dentro de la caja y afecta el tamaño total del elemento.
+            </li>
+            <li>
+                <b>Borde (Border):</b>
+                <br>Es la línea que rodea el contenido y el relleno de la caja. Puede tener diferentes 
+                estilos, anchos y colores.
+            </li>
+            <li>
+                <b>Margen (Margin):</b>
+                <br>Es el espacio entre el borde de la caja y los elementos adyacentes. Los márgenes se 
+                utilizan para controlar el espacio entre las cajas.
+            </li>
+        </ol>
+        <p>
+            Cuando se aplica estilos CSS a un elemento, se ajustan las propiedades relacionadas con 
+            el modelo de caja para controlar su apariencia y diseño en la página web. Por ejemplo, 
+            se puede establecer el tamaño del contenido, el color de fono, el ancho del borde y el espacio 
+            entre elementos utilizando propiedades como 'widht', 'height', 'padding', 'border' y 'margin'.
+        </p>
+    </section>
+    <section>
+        <h2>Elementos de línea y elementos de bloque</h2>
+        <p>
+            En HTML y CSS, los elementos se dividen en dos categorias principales en función de cómo se 
+            comportan y cómo afectan al flujo de contenido en una página web. Estas categorías son 
+            elementos de lína (inline elements) y elementos de bloque.
+        </p>
+        <ol>
+            <li>
+                <h3>Elementos de Línea (Inline Elements):</h3>
+                <p>
+                    Los elementos de línea se comportan como si estuvieran en una línea de texto. No inician 
+                    una nueva línea y solo ocupan espacio horizontal necesario. Por lo tanto, múltiples elementos 
+                    de línea pueden aparecer en la misma línea. Ejemplos comunes de elementos de línea son:
+                </p>
+                <ul type="disc">
+                    <li><b>'&lt;span&gt;'</b></li>
+                    <li><b>'&lt;a&gt;'</b> (hipervinculo)</li>
+                    <li><b>'&lt;strong&gt;'</b> (negrita)</li>
+                    <li><b>'&lt;em&gt;'</b> (énfasis o cursiva)</li>
+                    <li><b>'&lt;img&gt;'</b> (imagen)</li>
+                    <li><b>'&lt;br&gt;'</b> (salto de línea)</li>
+                </ul>
+                <p>Un ejemplo de uso de elementos de línea puede ser:</p>
+                <code>
+                    <pre>
+                        &lt;p&gt;Este es un texto &lt;strong&gt;en negrita &lt;/strong&gt; y un &lt;a href="#"&gt;hipervinculo&lt;/a&gt;.&lt;/p&gt;
+                    </pre>
+                </code>
+                <p>Este es un texto <strong>en negrita</strong> y un <a href="#">hipervínculo</a>.</p>
+            </li>
+            <li>
+                <h3>Elementos de Bloque (Block Elements):</h3>
+                <p>
+                    Los elementos de bloque, por otro lado, comienzan en una nueva línea y ocupan todo el ancho 
+                    disponible. Cada elemento de bloque crea un "bloque" independiente en la pagina. Ejemplos 
+                    comunes de elementos de bloque son:
+                </p>
+                <ul type="disc">
+                    <li><b>'&lt;div&gt;'</b></li>
+                    <li><b>'&lt;p&gt;'</b> (párrafo)</li>
+                    <li><b>'&lt;h1&gt;'</b> a <b>'&lt;h6&gt;'</b> (encabezados)</li>
+                    <li><b>'&lt;ul&gt;'</b>, <b>'&lt;ol&gt;'</b>, <b>'&lt;li&gt;'</b> (listas)</li>
+                    <li><b>'&lt;table&gt;'</b> (tabla)</li>
+                    <li><b>'&lt;form&gt;'</b> (formulario)</li>
+                </ul>
+                Ejemplo de uso de elementos de bloque:
+                <code>
+                    <pre>
+                        &lt;div&gt;
+                            &lt;h2&gt;Este es un encabezado de bloque&lt;/h2&gt;
+                            &lt;p&gt;Este es un párrafo dentro de un bloque.&lt;/p&gt;
+                        &lt;/div&gt;
+                    </pre>
+                </code>
+            </li>
+        </ol>
+        <p>
+            Es importante entender la diferencia entre estos dos tipos de elementos, ya que afecta cómo se estructura 
+            y presentan los contenidos en un página web. Además, CSS se puede utilizar para cambiar el comportamiento 
+            de los elementos, por ejemplo, convirtiendo un elemento de línea en un elemento de bloque o viceversa 
+            utilizando la propiedad 'display'.
+        </p>
+    </section>
+    <footer>
+        Creado por: 2018-027303 | Carlos Enrique Tavico Marroquin
+    </footer>
+</body>
+</html>

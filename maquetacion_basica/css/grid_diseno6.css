@@ -1,0 +1,50 @@
+.contenedor{
+    width: 1200px;
+    margin: auto;
+}
+header{
+    height: 200px;
+    background-color: black;
+}
+nav{
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#nav_aside1{
+    background-color: gold;
+}
+#nav_aside2{
+    background-color: darkblue;
+}
+section{
+    height: 150px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#sect_article1{
+    background-color: red;
+}
+#sect_article2{
+    background-color: darkseagreen;
+}
+#main1{
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto 200px;
+}
+#main_article1{
+    background-color: coral;
+}
+#main_article2{
+    background-color: red;
+}
+footer{
+    height: 200px;
+    background-color: black;
+}
+#main2{
+    height: 300px;
+    display: grid;
+    grid-template-columns: 200px auto;
+}

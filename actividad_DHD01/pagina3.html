@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="stylesheet" href="sass/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina2.html">Página 2</a></li>
+                <li class="active"><a href="pagina3.html">Página 3</a></li>
+                <li><a href="pagina4.html">Página 4</a></li>
+                <li><a href="pagina5.html">Página 5</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Funciones</h1>
+            <article>
+            <p>
+                En Sass, las funciones son bloques de código reutilizables que realizan cálculos y transformaciones y devuelven un valor. Las funciones en Sass permiten encapsular lógica y operaciones complejas que se pueden utilizar en diferentes partes del código, mejorando la modularidad y la mantenibilidad del estilo CSS.
+            </p>
+            <h3>Definir funciones en Sass</h3>
+            <p>Las funciones en Sass se definen utilizando la directiva @function. Esta es la sintaxis básica:</p>
+            <code>
+                <pre>
+                    @function nombre-funcion($parametro1, $parametro2, ...) {
+                        // Código de la función
+                        @return valor;
+                    }                      
+                </pre>
+            </code>
+            <h4>Ejemplo: Calcular el brillo de un color</h4>
+            <p>Una función útil podría ser calcular el brillo de un color y devolver un color más claro o más oscuro:</p>
+            <code>
+                <pre>
+                    @function adjust-brightness($color, $amount) {
+                        @if $amount > 0 {
+                          @return lighten($color, $amount);
+                        } @else {
+                          @return darken($color, abs($amount));
+                        }
+                      }
+                      
+                      // Uso de la función
+                      .button-color-1 {
+                        background-color: adjust-brightness(#3498db, 20%);
+                        border-color: adjust-brightness(#3498db, -10%);
+                      }
+                      .button-color-2 {
+                        background-color: adjust-brightness(#3498db, -10%);
+                        border-color: adjust-brightness(#3498db, 20%);
+                      }                   
+                </pre>
+            </code>
+            <button class="button-color-1">Botón-1</button>
+            <button class="button-color-2">Botón-2</button>
+        </article>
+        </section>
+    </div>
+</body>
+</html>

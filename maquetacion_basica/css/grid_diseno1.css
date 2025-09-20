@@ -1,0 +1,26 @@
+.contenedor{
+    width: 1440px;
+    display: grid;
+    grid-template-rows: 350px 900px 50px;
+    grid-template-areas:
+    'header header header header'
+    'menu main main login'
+    'footer footer footer footer';
+    margin: auto;
+    text-align: center;
+}
+header{
+    grid-area: header; background-color: skyblue;
+}
+main{
+    grid-area: menu; background-color: brown;
+}
+section{
+    grid-area: main; background-color: green;
+}
+aside{
+    grid-area: login; background-color: black;
+}
+footer{
+    grid-area: footer; background-color: skyblue;
+}

@@ -1,0 +1,54 @@
+.container{
+    width: 100%;
+    height: 100vh; /*100vh = 100% del alto de la pantalla*/
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+header{
+    background-color: black;
+    height: 20%;
+}
+nav{
+    display: flex;
+    height: 50%;
+}
+#nav_section1{
+    background-color: gray;
+    width: 75%;
+}
+#nav_section2{
+    width: 25%;
+}
+#nav_article1, #nav_article2{
+    height: 50%;
+}
+#nav_article1{
+    background-color: goldenrod;
+}
+#nav_article2{
+    background-color: cornflowerblue;
+}
+main{
+    display: flex;
+    height: 20%;
+}
+#main_art1, #main_art2, #main_art3, #main_art4{
+    width: 25%;
+}
+#main_art1{
+    background-color: darkseagreen;
+}
+#main_art2{
+    background-color: yellow;
+}
+#main_art3{
+    background-color: red;
+}
+#main_art4{
+    background-color: gold;
+}
+footer{
+    height: 10%;
+    background-color: black;
+}

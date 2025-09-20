@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for, each, while</title>
+    <link rel="stylesheet" href="sass/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina2.html">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+                <li><a href="pagina4.html">Página 4</a></li>
+                <li class="active"><a href="pagina5.html">Página 5</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>For, each, while</h1>
+            <article>
+            <p>
+                Las directivas @for, @each, y @while en Sass permiten realizar iteraciones, lo que facilita la generación dinámica de CSS basado en listas o rangos de valores. Estas directivas son útiles para crear estilos repetitivos de manera eficiente y mantener el código limpio y organizado.
+            </p>
+            <h3>Directiva @for</h3>
+            <p>La directiva @for se utiliza para iterar sobre un rango de números, generando reglas CSS repetitivas con diferentes valores.</p>
+            <code>
+                <pre>
+                    @for $var from <start> through <end> {
+                        // Código a ejecutar
+                      }                             
+                </pre>
+            </code>
+            <h4>Ejemplo</h4>
+            <p>Crear clases para columnas con anchos porcentuales:</p>
+            <code>
+                <pre>
+                    @for $i from 1 through 12 {
+                        .col-#{$i} {
+                          width: 100% / 12 * $i;
+                          border: 1px solid black;
+                        }
+                      }                      
+                </pre>
+            </code>
+            <p class="col-1"></p>
+            <p class="col-2"></p>
+            <p class="col-3"></p>
+            <p class="col-4"></p>
+            <p class="col-5"></p>
+            <p class="col-6"></p>
+            <p class="col-7"></p>
+            <p class="col-8"></p>
+            <p class="col-9"></p>
+            <p class="col-10"></p>
+            <p class="col-11"></p>
+            <p class="col-12"></p>
+            <h3>Directiva @each</h3>
+            <p>La directiva @each se utiliza para iterar sobre listas o mapas, aplicando estilos a cada elemento.</p>
+            <code>
+                <pre>
+                    //Para Listas
+                    @each $item in $list {
+                        // Código a ejecutar
+                      }
+                      //Para Mapas
+                      @each $key, $value in $map {
+                        // Código a ejecutar
+                      }                                              
+                </pre>
+            </code>
+            <h4>Ejemplo con Listas</h4>
+            <p>Crear clases de colores basados en una lista:</p>
+            <code>
+                <pre>
+                    $colors: red, green, blue;
+
+                        @each $color in $colors {
+                        .text-#{$color} {
+                            color: $color;
+                        }
+                    }                 
+                </pre>
+            </code>
+            <p class="text-red">Rojo</p>
+            <p class="text-green">Verde</p>
+            <p class="text-blue">Azul</p>
+            
+            <h4>Ejemplo con Mapas</h4>
+            <p>Crear clases de temas basados en un mapa:</p>
+            <code>
+                <pre>
+                    $themes: (
+                    primary: #3498db,
+                    secondary: #2ecc71,
+                    danger: #e74c3c
+                    );
+
+                    @each $name, $color in $themes {
+                        .#{$name}-theme {
+                            background-color: $color;
+                        }
+                    }           
+                </pre>
+            </code>
+            <p class="primary-theme">Primary</p>
+            <p class="secondary-theme">Secondary</p>
+            <p class="danger-theme">Danger</p>
+            
+            
+            <h3>Directiva @while</h3>
+            <p>La directiva @while se utiliza para ejecutar un bloque de código repetidamente mientras se cumpla una condición.</p>
+            <code>
+                <pre>
+                    @while 'condicion' {
+                        // Código a ejecutar
+                      }                                         
+                </pre>
+            </code>
+            <h4>Ejemplo</h4>
+            <p>Crear clases para elementos decrecientes:</p>
+            <code>
+                <pre>
+                    $i: 6;
+
+                    @while $i > 0 {
+                        .item-#{$i} {
+                            width: 10px * $i;
+                            border: 1px solid black;
+                        }
+                    $i: $i - 1;
+                    }            
+                </pre>
+            </code>
+            <p class="item-1"></p>
+            <p class="item-2"></p>
+            <p class="item-3"></p>
+            <p class="item-4"></p>
+            <p class="item-5"></p>
+            <p class="item-6"></p>
+            <p class="item-7"></p>
+            <p class="item-8"></p>
+            <p class="item-9"></p>
+            <p class="item-10"></p>
+            <p class="item-11"></p>
+            <p class="item-12"></p>
+        </article>
+        </section>
+    </div>
+</body>
+</html>

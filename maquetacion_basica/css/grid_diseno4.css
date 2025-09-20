@@ -1,0 +1,48 @@
+.contenedor{
+    width: 1200px;
+    margin: auto;
+}
+header{
+    height: 250px;
+    background-color: yellow;
+}
+nav{
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#nav_article1{
+    background-color: darkseagreen;
+}
+#nav_article2{
+    background-color: gainsboro;
+}
+#nav_article3{
+    background-color: cornflowerblue;
+}
+section{
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#sect_aside1{
+    background-color: burlywood;
+}
+#sect_aside2{
+    background-color: orange;
+}
+main{
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+#main_art1{
+    background-color: lightsteelblue;
+}
+#main_art2{
+    background-color: cornflowerblue;
+}
+footer{
+    height: 100px;
+    background-color: black;
+}

@@ -1,0 +1,38 @@
+.container{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+header{
+    background-color: yellow;
+    height: 350px;
+}
+nav{
+    height: 125px;
+    display: flex;
+}
+.nav_naranja{
+    background-color: orange;
+    width: 25%;
+}
+.nav_gris{
+    background-color: gray;
+    width: 25%;
+}
+main{
+    height: 500px;
+    display: flex;
+}
+.main_menta{
+    background-color: darkseagreen;
+    width: 25%;
+}
+.main_gris{
+    background-color: ghostwhite;
+    width: 50%;
+}
+footer{
+    background-color: black;
+    height: 50px;
+}

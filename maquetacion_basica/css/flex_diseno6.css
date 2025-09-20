@@ -1,0 +1,63 @@
+.container{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+header{
+    height: 200px;
+    background-color: black;
+}
+nav{
+    height: 250px;
+    display: flex;
+}
+.nav_section_amarillo, .nav_section_azul{
+    width: 33.33%;
+}
+.nav_section_amarillo{
+    background-color: gold;
+}
+.nav_section_azul{
+    background-color: darkblue;
+}
+.section1{
+    height: 150px;
+    display: flex;
+}
+#section1_rojo{
+    width: 50%;
+    background-color: red;
+}
+#section1_menta{
+    width: 50%;
+    background-color: darkseagreen;
+}
+.section2{
+    height: 300px;
+    display: flex;
+}
+#section2_cafe{
+    flex-grow: 5;
+    background-color: coral;
+}
+#section2_rojo{
+    flex-grow: 1;
+    background-color: red;
+}
+.section3{
+    height: 200px;
+    background-color: black;
+}
+footer{
+    height: 300px;
+    display: flex;
+}
+#footer_rojo{
+    flex-grow: 1;
+    background-color: red;
+}
+#footer_cafe{
+    flex-grow: 5;
+    background-color: coral;
+}
